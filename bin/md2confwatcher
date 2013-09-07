@@ -1,0 +1,13 @@
+#!/usr/bin/env coffee
+# vim: ft=coffee
+###
+* md2conf-watcher
+* https://github.com/Layzie/md2conf-watcher
+*
+* Copyright (c) 2013 HIRAKI Satoru
+* Licensed under the MIT license.
+###
+'use strict'
+
+md2confwatcher = require '../index'
+

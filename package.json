@@ -1,0 +1,44 @@
+{
+  "name": "md2conf-watcher",
+  "description": "markdown2conflucence watcher command.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Layzie/md2conf-watcher",
+  "author": {
+    "name": "HIRAKI Satoru",
+    "email": "saruko313@gmail.com",
+    "url": "http://layzie.hatenablog.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Layzie/md2conf-watcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Layzie/md2conf-watcher/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Layzie/md2conf-watcher/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "./index",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "testem"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.1",
+    "expect.js": "~0.2.0",
+    "mocha": "~1.12.1",
+    "grunt-coffeelint": "0.0.7"
+  },
+  "keywords": [],
+  "dependencies": {
+    "node-watch": "~0.3.4",
+    "coffee-script": "~1.6.3",
+    "optimist": "~0.6.0"
+  }
+}

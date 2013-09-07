@@ -1,0 +1,14 @@
+h1. This is example
+
+h2. 2nd example
+
+This is 2nd example's *code*
+
+
+{code}
+function hello() {
+  return 'Hello'
+}
+{code}
+
+
