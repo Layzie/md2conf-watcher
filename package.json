@@ -1,7 +1,7 @@
 {
   "name": "md2conf-watcher",
   "description": "markdown2conflucence watcher command.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/Layzie/md2conf-watcher",
   "author": {
     "name": "HIRAKI Satoru",
@@ -35,7 +35,15 @@
     "mocha": "~1.12.1",
     "grunt-coffeelint": "0.0.7"
   },
-  "keywords": [],
+  "keywords": [
+    "confluence",
+    "markdown",
+    "command",
+    "cli"
+  ],
+  "os": [
+    "darwin"
+  ],
   "dependencies": {
     "node-watch": "~0.3.4",
     "coffee-script": "~1.6.3",

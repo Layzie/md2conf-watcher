@@ -28,6 +28,8 @@ $ md2conf-watcher -d /path/to/markdown
 
 ## Release History
 
+- 0.1.1
+    - Change package.json.
 - 0.1.0
     - Initial commit.
 
