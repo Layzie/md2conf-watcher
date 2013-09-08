@@ -1,7 +1,7 @@
 {
   "name": "md2conf-watcher",
   "description": "markdown2conflucence watcher command.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/Layzie/md2conf-watcher",
   "author": {
     "name": "HIRAKI Satoru",

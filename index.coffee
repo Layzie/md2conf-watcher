@@ -37,7 +37,7 @@ fs.exists argv.d, (exists) ->
 
           console.log stdout
           console.log stderr
-          console.log splitFilename filename, '.wiki is created.'
+          console.log "#{splitFilename filename}.wiki is created."
       )
     ))
   else

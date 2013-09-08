@@ -28,8 +28,10 @@ $ md2conf-watcher -d /path/to/markdown
 
 ## Release History
 
+- 0.1.3
+    - Fix console.log message.
 - 0.1.2
-    - Add 'bin' in package.json
+    - Add 'bin' in package.json.
 - 0.1.1
     - Change package.json.
 - 0.1.0
