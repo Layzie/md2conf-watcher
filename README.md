@@ -28,6 +28,9 @@ $ md2conf-watcher -d /path/to/markdown
 
 ## Release History
 
+- 0.1.4
+    - change console message color
+    - add helper module.
 - 0.1.3
     - Fix console.log message.
 - 0.1.2
