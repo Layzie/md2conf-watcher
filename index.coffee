@@ -21,23 +21,22 @@ argv = require('optimist')
   )
   .argv
 
-filter = (pattern, fn) ->
-  (filename) -> fn filename if pattern.test filename
+helper = require './src/helper'
 
-splitFilename = (filename) -> filename.split('.')[0]
+filterReg = /\.md$|\.markdown$/
 
+# Judge existance of file/directory refred argv options
 fs.exists argv.d, (exists) ->
   if exists
-    watch(argv.d, filter(/\.md$|\.markdown$/, (filename) ->
+    watch(argv.d, helper.filter(filterReg, (filename) ->
       console.log filename, ' changed.'
 
-      exec("markdown2confluence #{filename} > #{splitFilename filename}.wiki",
-        (err, stdout, stderr) ->
+      exec(helper.execCommand(filename), (err, stdout, stderr) ->
           throw new Error('Error!') if err
 
           console.log stdout
           console.log stderr
-          console.log "#{splitFilename filename}.wiki is created."
+          console.log "#{helper.splitFilename filename}.wiki is created."
       )
     ))
   else
