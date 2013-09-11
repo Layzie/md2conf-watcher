@@ -20,6 +20,7 @@ argv = require('optimist')
     demand: true
   )
   .argv
+colors = require 'colors'
 
 helper = require './src/helper'
 
@@ -29,16 +30,16 @@ filterReg = /\.md$|\.markdown$/
 fs.exists argv.d, (exists) ->
   if exists
     watch(argv.d, helper.filter(filterReg, (filename) ->
-      console.log filename, ' changed.'
+      console.log "#{filename} changed.".green
 
       exec(helper.execCommand(filename), (err, stdout, stderr) ->
-          throw new Error('Error!') if err
+          throw new Error('Error!'.underline.red) if err
 
           console.log stdout
           console.log stderr
-          console.log "#{helper.splitFilename filename}.wiki is created."
+          console.log "#{helper.splitFilename filename}.wiki is created.".magenta
       )
     ))
   else
-    console.log 'File or directory is not exist.'
+    console.log 'File or directory is not exist.'.underline.red
     process.exit 1

@@ -47,7 +47,8 @@
   "dependencies": {
     "node-watch": "~0.3.4",
     "coffee-script": "~1.6.3",
-    "optimist": "~0.6.0"
+    "optimist": "~0.6.0",
+    "colors": "~0.6.2"
   },
   "bin": {
     "md2conf-watcher": "./bin/md2confwatcher"
